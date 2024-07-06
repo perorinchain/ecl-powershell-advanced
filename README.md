@@ -2,7 +2,7 @@
 
 ここでは「基本的に環境構築しない！」をモットーに頑張ってみます。静的コンテンツはPowerShellのみで完結できそうですが、HTML要素とかが非常に見づらい。。
 
-※ **スクレイピングするサイトの利用規約、データの著作権等は十分ご注意ください。** たとえば、[Google検索結果をスクレイピングするのは規約違反](https://support.google.com/adspolicy/answer/6169371?hl=ja) なもよう。。（代わりに提供されているAPIを使いなさいとのこと）
+※ **スクレイピングするサイトの利用規約、データの著作権等は十分ご注意ください。** たとえば、[Google検索結果をスクレイピングするのは規約違反](https://support.google.com/adspolicy/answer/6169371?hl=ja) なもよう。。（代わりに提供されているAPIを使いなさいとのこと）<br>
 ※APIが提供されていない動的コンテンツは、Selenium等を使わないと取得できなさそう。。
 
 
@@ -50,7 +50,7 @@ PS C:\work> $SainoRes.Content
 ```
 PS C:\work> $SainoRes.ParsedHtml.getElementsByClassName('sectionWrapper')[0].childNodes[1].innerText
 ```
-※ `ParsedHtml` で、DOM操作ができる内容にしてくれる。IEのエンジンが動いてパースするらしいです。
+※ `ParsedHtml` で、DOM操作ができる内容にしてくれる。IEのエンジンが動いてパースするらしいです。<br>
 ※ `ParsedHtml` で使えるメソッドなどは、以下のように  `Get-Member` へパイプしてやると分かります。
 ```
 PS C:\work> $SainoRes.ParsedHtml | Get-Member
