@@ -2,6 +2,7 @@
 
 ここでは「基本的に環境構築しない！」をモットーに頑張ってみます。静的コンテンツはPowerShellのみで完結できそうですが、HTML要素とかが非常に見づらい。。
 
+※[ここ](https://github.com/perorinchain/ecl-powershell-beginner)の内容は前提とします。<br>
 ※ **スクレイピングするサイトの利用規約、データの著作権等は十分ご注意ください。** たとえば、[Google検索結果をスクレイピングするのは規約違反](https://support.google.com/adspolicy/answer/6169371?hl=ja) なもよう。。（代わりに提供されているAPIを使いなさいとのこと）<br>
 ※APIが提供されていない動的コンテンツは、Selenium等を使わないと取得できなさそう。。
 
