@@ -76,7 +76,7 @@ PS C:\work> $SainoRes.ParsedHtml | Get-Member
 
 
 ## おためし４：WikipediaのAPIを使ってみよう！（スクレイピングじゃないけど）
-スクレイピングよりも提供されているAPIを使いなさい、というような流れがあるので、APIを使った情報取得もやってみましょう！ `Invoke-WebRequest` でもやれそうですが、今回は `Invoke-RestMethod` を使ってWikipediaの特定ページから要約を取得してみましょう。
+スクレイピングよりも提供されているAPIを使いなさい、というような流れがあるので、APIを使った情報取得もやってみましょう！ `Invoke-WebRequest` でもやれそうですが、今回は `Invoke-RestMethod` を使ってWikipediaの特定ページから要約を取得してみましょう。（今回は「[Linux](https://ja.wikipedia.org/wiki/Linux)」のページ）
 ```
 # 記事のタイトル
 $articleTitle = "Linux"
